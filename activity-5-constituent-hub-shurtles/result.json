@@ -1,0 +1,468 @@
+{
+  "task": "constituent_hub",
+  "status": "success",
+  "outputs": {
+    "pii_results": [
+      {
+        "original_text": "My name is John Smith, SSN 123-45-6789. There's a huge pothole on 123 Main St in Midtown that damaged my car. My phone number is (901) 555-0147.",
+        "redacted_text": "My name is **********, SSN ***********. There's a huge pothole on *********** in Midtown that damaged my car. My phone number is **************.",
+        "entities": [
+          {
+            "text": "John Smith",
+            "category": "Person",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "123-45-6789",
+            "category": "USSocialSecurityNumber",
+            "confidence_score": 0.85
+          },
+          {
+            "text": "123 Main St",
+            "category": "Address",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "(901) 555-0147",
+            "category": "PhoneNumber",
+            "confidence_score": 1.0
+          }
+        ]
+      },
+      {
+        "original_text": "I've been waiting 3 weeks for someone to fix the broken streetlight on Beale Street. This is completely unacceptable and dangerous for my family!",
+        "redacted_text": "I've been waiting 3 weeks for someone to fix the broken streetlight on ************. This is completely unacceptable and dangerous for my ******!",
+        "entities": [
+          {
+            "text": "Beale Street",
+            "category": "Address",
+            "confidence_score": 0.99
+          },
+          {
+            "text": "family",
+            "category": "PersonType",
+            "confidence_score": 0.85
+          }
+        ]
+      },
+      {
+        "original_text": "Hay un bache grande en la calle Union Avenue cerca de la escuela. Mi nombre es Carlos Rivera y vivo en 456 Oak Drive.",
+        "redacted_text": "Hay un bache grande en la ****************** cerca de la escuela. Mi nombre es ************* y vivo en *************.",
+        "entities": [
+          {
+            "text": "calle Union Avenue",
+            "category": "Address",
+            "confidence_score": 0.84
+          },
+          {
+            "text": "Carlos Rivera",
+            "category": "Person",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "456 Oak Drive",
+            "category": "Address",
+            "confidence_score": 0.99
+          }
+        ]
+      },
+      {
+        "original_text": "Thank you for fixing the water main break on Poplar Avenue so quickly! Great response time by the city crew. Really appreciate the service.",
+        "redacted_text": "Thank you for fixing the water main break on ************* so quickly! Great response time by the *********. Really appreciate the service.",
+        "entities": [
+          {
+            "text": "Poplar Avenue",
+            "category": "Address",
+            "confidence_score": 0.94
+          },
+          {
+            "text": "city crew",
+            "category": "PersonType",
+            "confidence_score": 0.83
+          }
+        ]
+      },
+      {
+        "original_text": "T\u00f4i mu\u1ed1n b\u00e1o c\u00e1o ti\u1ebfng \u1ed3n l\u1edbn t\u1eeb c\u00f4ng tr\u01b0\u1eddng x\u00e2y d\u1ef1ng tr\u00ean \u0111\u01b0\u1eddng Summer Avenue. T\u00ean t\u00f4i l\u00e0 Nguyen Van Minh, s\u1ed1 \u0111i\u1ec7n tho\u1ea1i 901-555-0238.",
+        "redacted_text": "T\u00f4i mu\u1ed1n b\u00e1o c\u00e1o ti\u1ebfng \u1ed3n l\u1edbn t\u1eeb c\u00f4ng tr\u01b0\u1eddng x\u00e2y d\u1ef1ng tr\u00ean \u0111\u01b0\u1eddng *************. T\u00ean t\u00f4i l\u00e0 ***************, s\u1ed1 \u0111i\u1ec7n tho\u1ea1i ************.",
+        "entities": [
+          {
+            "text": "Summer Avenue",
+            "category": "Address",
+            "confidence_score": 0.67
+          },
+          {
+            "text": "Nguyen Van Minh",
+            "category": "Person",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "901-555-0238",
+            "category": "PhoneNumber",
+            "confidence_score": 1.0
+          }
+        ]
+      },
+      {
+        "original_text": "There's graffiti all over the bridge at Overton Park. It appeared sometime last weekend. The tags are on both sides of the pedestrian walkway.",
+        "redacted_text": "There's graffiti all over the bridge at Overton Park. It appeared sometime last weekend. The tags are on both sides of the pedestrian walkway.",
+        "entities": []
+      },
+      {
+        "original_text": "Patricia Johnson here, account number 44-8821. The sewer is backing up at 789 Elm Street in Whitehaven. It's been three days and the smell is terrible. Contact me at patricia.johnson@email.com.",
+        "redacted_text": "**************** here, account number 44-8821. The sewer is backing up at ************** in Whitehaven. It's been three days and the smell is terrible. Contact me at **************************.",
+        "entities": [
+          {
+            "text": "Patricia Johnson",
+            "category": "Person",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "789 Elm Street",
+            "category": "Address",
+            "confidence_score": 1.0
+          },
+          {
+            "text": "patricia.johnson@email.com",
+            "category": "Email",
+            "confidence_score": 0.8
+          }
+        ]
+      },
+      {
+        "original_text": "The trash hasn't been picked up on our block for two weeks now. Some neighbors are happy about the new recycling bins though. Mixed feelings overall on Orange Mound services.",
+        "redacted_text": "The trash hasn't been picked up on our block for two weeks ***. Some ********* are happy about the new recycling bins though. Mixed feelings overall on ************ services.",
+        "entities": [
+          {
+            "text": "now",
+            "category": "DateTime",
+            "confidence_score": 0.58
+          },
+          {
+            "text": "neighbors",
+            "category": "PersonType",
+            "confidence_score": 0.99
+          },
+          {
+            "text": "Orange Mound",
+            "category": "Organization",
+            "confidence_score": 0.99
+          }
+        ]
+      },
+      {
+        "original_text": "I submitted a pothole repair request last month, case number 311-2025-044. Can I get a status update on when the crew is scheduled to come out?",
+        "redacted_text": "I submitted a pothole repair request last month, case number ************. Can I get a status update on when the **** is scheduled to come out?",
+        "entities": [
+          {
+            "text": "311-2025-044",
+            "category": "PhoneNumber",
+            "confidence_score": 0.65
+          },
+          {
+            "text": "crew",
+            "category": "PersonType",
+            "confidence_score": 0.96
+          }
+        ]
+      },
+      {
+        "original_text": "Where can I find the recycling schedule for Orange Mound? I also need information on how to sign up for bulk trash pickup.",
+        "redacted_text": "Where can I find the recycling schedule for Orange Mound? I also need information on how to sign up for bulk trash pickup.",
+        "entities": []
+      }
+    ],
+    "sentiment_results": [
+      {
+        "sentiment": "negative",
+        "confidence_scores": {
+          "positive": 0.0,
+          "negative": 0.99,
+          "neutral": 0.01
+        },
+        "key_phrases": [
+          "huge pothole",
+          "phone number",
+          "name",
+          "SSN",
+          "Midtown",
+          "car"
+        ]
+      },
+      {
+        "sentiment": "negative",
+        "confidence_scores": {
+          "positive": 0.0,
+          "negative": 0.99,
+          "neutral": 0.01
+        },
+        "key_phrases": [
+          "broken streetlight",
+          "someone"
+        ]
+      },
+      {
+        "sentiment": "neutral",
+        "confidence_scores": {
+          "positive": 0.27,
+          "negative": 0.01,
+          "neutral": 0.72
+        },
+        "key_phrases": [
+          "bache",
+          "grande",
+          "escuela",
+          "nombre"
+        ]
+      },
+      {
+        "sentiment": "positive",
+        "confidence_scores": {
+          "positive": 1.0,
+          "negative": 0.0,
+          "neutral": 0.0
+        },
+        "key_phrases": [
+          "water main break",
+          "Great response time",
+          "service"
+        ]
+      },
+      {
+        "sentiment": "neutral",
+        "confidence_scores": {
+          "positive": 0.04,
+          "negative": 0.06,
+          "neutral": 0.91
+        },
+        "key_phrases": [
+          "T\u00f4i mu\u1ed1n b\u00e1o c\u00e1o",
+          "\u1eeb c\u00f4ng tr\u01b0\u1eddng x\u00e2y",
+          "\u1ef1ng tr\u00ean",
+          "i\u1ec7n tho",
+          "T\u00ean",
+          "\u1edbn",
+          "\u0111\u01b0\u1edd"
+        ]
+      },
+      {
+        "sentiment": "neutral",
+        "confidence_scores": {
+          "positive": 0.03,
+          "negative": 0.05,
+          "neutral": 0.92
+        },
+        "key_phrases": [
+          "Overton Park",
+          "pedestrian walkway",
+          "graffiti",
+          "bridge",
+          "tags",
+          "sides"
+        ]
+      },
+      {
+        "sentiment": "negative",
+        "confidence_scores": {
+          "positive": 0.0,
+          "negative": 1.0,
+          "neutral": 0.0
+        },
+        "key_phrases": [
+          "three days",
+          "account",
+          "sewer",
+          "Whitehaven",
+          "smell"
+        ]
+      },
+      {
+        "sentiment": "mixed",
+        "confidence_scores": {
+          "positive": 0.45,
+          "negative": 0.5,
+          "neutral": 0.05
+        },
+        "key_phrases": [
+          "new recycling bins",
+          "two weeks",
+          "Mixed feelings",
+          "trash",
+          "block"
+        ]
+      },
+      {
+        "sentiment": "negative",
+        "confidence_scores": {
+          "positive": 0.0,
+          "negative": 0.88,
+          "neutral": 0.11
+        },
+        "key_phrases": [
+          "pothole repair request",
+          "case number",
+          "status update"
+        ]
+      },
+      {
+        "sentiment": "negative",
+        "confidence_scores": {
+          "positive": 0.0,
+          "negative": 0.91,
+          "neutral": 0.09
+        },
+        "key_phrases": [
+          "bulk trash pickup",
+          "recycling schedule",
+          "Orange Mound",
+          "information"
+        ]
+      }
+    ],
+    "translation_results": [
+      {
+        "detected_language": "en",
+        "confidence": 0.99,
+        "original_text": "My name is **********, SSN ***********. There's a huge pothole on *********** in Midtown that damaged my car. My phone number is **************.",
+        "translated_text": "My name is **********, SSN ***********. There's a huge pothole on *********** in Midtown that damaged my car. My phone number is **************.",
+        "was_translated": false
+      },
+      {
+        "detected_language": "en",
+        "confidence": 0.96,
+        "original_text": "I've been waiting 3 weeks for someone to fix the broken streetlight on ************. This is completely unacceptable and dangerous for my ******!",
+        "translated_text": "I've been waiting 3 weeks for someone to fix the broken streetlight on ************. This is completely unacceptable and dangerous for my ******!",
+        "was_translated": false
+      },
+      {
+        "detected_language": "es",
+        "confidence": 1.0,
+        "original_text": "Hay un bache grande en la ****************** cerca de la escuela. Mi nombre es ************* y vivo en *************.",
+        "translated_text": "There is a big pothole in the ****************** near the school. My name is ************* and I live in *************.",
+        "was_translated": true
+      },
+      {
+        "detected_language": "en",
+        "confidence": 0.99,
+        "original_text": "Thank you for fixing the water main break on ************* so quickly! Great response time by the *********. Really appreciate the service.",
+        "translated_text": "Thank you for fixing the water main break on ************* so quickly! Great response time by the *********. Really appreciate the service.",
+        "was_translated": false
+      },
+      {
+        "detected_language": "vi",
+        "confidence": 1.0,
+        "original_text": "T\u00f4i mu\u1ed1n b\u00e1o c\u00e1o ti\u1ebfng \u1ed3n l\u1edbn t\u1eeb c\u00f4ng tr\u01b0\u1eddng x\u00e2y d\u1ef1ng tr\u00ean \u0111\u01b0\u1eddng *************. T\u00ean t\u00f4i l\u00e0 ***************, s\u1ed1 \u0111i\u1ec7n tho\u1ea1i ************.",
+        "translated_text": "I would like to report loud noise from the construction site on ************* road. My name is ***************, phone number ************.",
+        "was_translated": true
+      },
+      {
+        "detected_language": "en",
+        "confidence": 0.99,
+        "original_text": "There's graffiti all over the bridge at Overton Park. It appeared sometime last weekend. The tags are on both sides of the pedestrian walkway.",
+        "translated_text": "There's graffiti all over the bridge at Overton Park. It appeared sometime last weekend. The tags are on both sides of the pedestrian walkway.",
+        "was_translated": false
+      },
+      {
+        "detected_language": "en",
+        "confidence": 0.99,
+        "original_text": "**************** here, account number 44-8821. The sewer is backing up at ************** in Whitehaven. It's been three days and the smell is terrible. Contact me at **************************.",
+        "translated_text": "**************** here, account number 44-8821. The sewer is backing up at ************** in Whitehaven. It's been three days and the smell is terrible. Contact me at **************************.",
+        "was_translated": false
+      },
+      {
+        "detected_language": "en",
+        "confidence": 1.0,
+        "original_text": "The trash hasn't been picked up on our block for two weeks ***. Some ********* are happy about the new recycling bins though. Mixed feelings overall on ************ services.",
+        "translated_text": "The trash hasn't been picked up on our block for two weeks ***. Some ********* are happy about the new recycling bins though. Mixed feelings overall on ************ services.",
+        "was_translated": false
+      },
+      {
+        "detected_language": "en",
+        "confidence": 0.99,
+        "original_text": "I submitted a pothole repair request last month, case number ************. Can I get a status update on when the **** is scheduled to come out?",
+        "translated_text": "I submitted a pothole repair request last month, case number ************. Can I get a status update on when the **** is scheduled to come out?",
+        "was_translated": false
+      },
+      {
+        "detected_language": "en",
+        "confidence": 1.0,
+        "original_text": "Where can I find the recycling schedule for Orange Mound? I also need information on how to sign up for bulk trash pickup.",
+        "translated_text": "Where can I find the recycling schedule for Orange Mound? I also need information on how to sign up for bulk trash pickup.",
+        "was_translated": false
+      }
+    ],
+    "intent_results": [
+      {
+        "top_intent": "report-issue",
+        "confidence": 1.0,
+        "entities": []
+      },
+      {
+        "top_intent": "report-issue",
+        "confidence": 1.0,
+        "entities": []
+      },
+      {
+        "top_intent": "ask-question",
+        "confidence": 0.0,
+        "entities": []
+      },
+      {
+        "top_intent": "report-issue",
+        "confidence": 1.0,
+        "entities": []
+      },
+      {
+        "top_intent": "ask-question",
+        "confidence": 0.0,
+        "entities": []
+      },
+      {
+        "top_intent": "report-issue",
+        "confidence": 1.0,
+        "entities": []
+      },
+      {
+        "top_intent": "report-issue",
+        "confidence": 1.0,
+        "entities": []
+      },
+      {
+        "top_intent": "report-issue",
+        "confidence": 0.5,
+        "entities": []
+      },
+      {
+        "top_intent": "check-status",
+        "confidence": 0.71,
+        "entities": []
+      },
+      {
+        "top_intent": "ask-question",
+        "confidence": 0.86,
+        "entities": []
+      }
+    ],
+    "pipeline_summary": {
+      "total_complaints": 10,
+      "steps_completed": [
+        "pii_detection",
+        "sentiment_analysis",
+        "translation",
+        "intent_recognition"
+      ],
+      "pii_entities_found": 22,
+      "languages_detected": [
+        "en",
+        "es",
+        "vi"
+      ],
+      "translations_performed": 2
+    }
+  },
+  "metadata": {
+    "timestamp": "2026-03-26T17:56:48.323783+00:00",
+    "model": "azure-ai-language",
+    "sdk_version": "5.4.0"
+  }
+}

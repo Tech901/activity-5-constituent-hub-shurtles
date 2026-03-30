@@ -65,8 +65,7 @@ def _get_language_client():
             endpoint=os.environ["AZURE_AI_LANGUAGE_ENDPOINT"],
             credential=AzureKeyCredential(
                 os.environ["AZURE_AI_LANGUAGE_KEY"]
-            ),
-            connection_verify=False
+            )
         )
     return _language_client
 
@@ -96,8 +95,7 @@ def _get_translator_client():
             credential=AzureKeyCredential(
                 os.environ["AZURE_TRANSLATOR_KEY"]
             ),
-            region=os.environ.get("AZURE_TRANSLATOR_REGION", "eastus"),
-            connection_verify=False
+            region=os.environ.get("AZURE_TRANSLATOR_REGION", "eastus")
         )
     return _translator_client
 
@@ -132,8 +130,7 @@ def _get_clu_client():
             endpoint=os.environ["AZURE_AI_LANGUAGE_ENDPOINT"],
             credential=AzureKeyCredential(
                 os.environ["AZURE_AI_LANGUAGE_KEY"]
-            ),
-            connection_verify=False
+            )
         )
     return _clu_client
 

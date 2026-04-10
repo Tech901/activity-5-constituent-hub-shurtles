@@ -18,7 +18,7 @@ The service picked up things like names, phone numbers, and addresses from the M
 
 How could sentiment analysis be used to prioritize Memphis 311 complaints — for example, routing highly negative complaints to senior staff? What are the risks of relying solely on sentiment for prioritization (consider complaints that are neutral in tone but urgent in nature)? How would you combine sentiment with other signals for a more robust routing system?
 
-You could definitely flag super angry or panicked complaints so an actual human manager sees them ASAP to de-escalate things before they get out of hand. But leaning entirely on sentiment is risky because someone might casually write, "hey just an fyi, the main bridge collapsed," which sounds completely neutral but is a massive emergency! To fix that, it's best to combine the sentiment score with key phrase extraction so you can spot "bridge collapsed" or "fire" regardless of whether the person used exclamation marks or not.
+You could definitely flag super angry or panicked complaints so an actual human manager sees them ASAP to de-escalate things before they get out of hand. But leaning entirely on sentiment is risky because someone might casually write, "hey just an fyi, the main bridge collapsed," which sounds completely neutral but is a massive emergency! To fix that, it's best to combine the sentiment score with key phrase extraction so you can spot "bridge collapsed" or "fire" regardless of whether the person used exclamation marks or not.one extra line of comment
 
 ## 3. Multilingual Challenges
 
